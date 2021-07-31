@@ -1,0 +1,146 @@
+body{
+    --width: 500px;
+    --height: 500px;
+    width: var(--width);
+    height: var(--height);
+    color: black;
+    position: relative;
+    border: springgreen 4px solid;
+    margin: 0;
+}
+#title{
+    font-family: 'Russo One', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(140,146,172, 0.7);
+    width: var(--width);
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+#bg {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    border: 10px #333 solid;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu{
+    --bgColor: blue;
+    background-color: var(--bgColor);
+    padding: 15px;
+    display: flex;
+    min-height: 38px;
+}
+.menu button{
+    font-size: 25px;
+    width: 50%;
+    background-color: var(--bgColor);
+    border: none;
+    color: white;
+}
+.menu button:hover{
+    background-color: red;
+    border: black 3px solid;
+    font-weight: bold;
+    transition: background-color 600ms ease, 
+                border 100ms ease;  
+}
+#menu-seperate{
+    font-size: 25px;
+    font-weight: 500;
+}
+.cameraScreen{
+    text-align: center;
+}
+#toggleCam{
+    margin-top: 10px;
+}
+
+
+/* Start of checkToggle Code*/
+.toggle{
+    position: absolute;
+    bottom: 25px;
+    margin-left: 10px;
+}
+.switch{
+    font-size: 20px;
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'Russo One';
+}
+.switch_input{
+    display: none;
+}
+.switch_fill{
+    position: relative;
+    background: #FFA500;
+    transition: background 1.5s;
+    border-radius: 50px;
+    color: white;
+}
+.switch_input:checked ~ .switch_fill{
+    background: #009578;
+}
+.switch_fill::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    border-radius: 50px;
+    background: white;
+    box-shadow: 0 0 10px rgb(0 0 0 / 25%);
+    transition: transform 0.5s;
+}
+.switch_input:checked ~ .switch_fill::after{
+    transform: translateX(100%);
+}
+/* End of checkToggle Code */
+.timeBtns{
+    position: absolute;
+    bottom: 45px;
+    right: 0;
+    margin-right: 10px;
+}
+.timeBtns button{
+    font-size: 20px;
+}
+#timerContent{
+    background-color: rgba(136, 140, 161, 0.9);
+    text-align: center;
+    height: auto;
+    max-height: 0px;
+    overflow: hidden;
+    font-size: 20px;
+    transition: max-height 2s ease;
+}
+.mainHead{
+    display: grid;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainHead div, .content{
+    margin-top: 10px;
+}
+.exerciseTimer{
+    margin-top: 20px;
+    font-size: 25px;
+    display: flex;
+}
+.exerciseTimer > div{
+    display: grid;
+    width: fit-content;
+    margin-left: 10px;
+}
+.exerciseTimer > div > select{
+    width: fit-content;
+}

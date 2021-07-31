@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./main.css">   
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posture Fixer</title>
+    <script type="text/javascript" nonce></script>
+</head>
+<body>
+    <div class="heading">
+        <nav class="menu">
+            <button id="page1Click">Home</button><span id="menu-seperate">|</span>
+            <button id="page2Click">Stats</button>
+        </nav>
+        <div class="mainHead">
+            <!-- <video id="video2" autoplay></video> -->
+            
+            <div id="title">Posture Guru</div>
+            <div id="timerContent">
+                <label for="displayTimer" id="timeLabel">Work Timer</label>
+                <div id="displayTimer">
+                    00:00:00
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="cameraScreen">  
+            <img id="bg" src="">
+            <button id="toggleCam">Show Preview</button>
+        </div>
+        <div class = 'video'>
+            <img id="image">
+        </div>
+        <div class="exerciseTimer">
+            <div class="exerciseFreq">
+                <label for="break Freq" id="everyTime">Choose Break Frequency(mins): </label> 
+                <select id="breakFreq">
+                    <option value="noTime" selected disabled>No Time Selected</option>
+                    <option value="15">15</option>
+                    <option value="30">30</option>
+                    <option value="45">45</option>
+                    <option value="60">60</option>
+                </select>
+            </div>
+            <div class="exerciseBreak">
+                <label for="break Freq" id="everyTime">Choose Break Time: </label> 
+                <select id="breakTimer">
+                    <option value="noTime" selected disabled>No Time Selected</option>
+                    <option value="15mins">15</option>
+                    <option value="30mins">30</option>
+                    <option value="45mins">45</option>
+                    <option value="60mins">60</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="toggle">
+            <label class="switch" for="mySwitch">
+                <input class="switch_input" type="checkbox" id="mySwitch">
+                <div class="switch_fill"><p>&nbsp; ON &nbsp; &nbsp; &nbsp; OFF &nbsp;</p></div>
+            </label>
+        </div>
+        <div class="timeBtns">
+            <button id="startStop">Start</button> <button id="reset">Reset</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a target="_blank" href="https://melone0403.github.io/postureGuruWeb/" id="postureWebsite">Learn More At Our Website</a>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
