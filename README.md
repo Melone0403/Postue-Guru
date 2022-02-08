@@ -5,3 +5,5 @@ Steps to run the server
 2. Activate the venv   -- .\venv\Scripts\activate
 3. python -m pip install -r requirements.txt
 4. flask run
+
+## THIS EXTENSION IS NOT THE FINAL FINISHED VERSION YET!!
